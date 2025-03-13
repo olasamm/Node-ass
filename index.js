@@ -90,83 +90,91 @@ let users = [
   
 
 
-  let bank = [
+
+  let schools = [
     {
-      name: "Grace Lee",
-      pictures: ["image17.jpg", "image18.jpg"],
-      email: "gracelee@example.com",
-      phone_number: "+7788990011",
-      bank_name: "Westside Bank",
-      nin: "NIN778899001"
+      name: "Greenwood High School",
+      address: "123 Main St, Springfield",
+      principal: "Mr. John Smith",
+      students: 1200,
+      established: 1985
     },
     {
-      name: "Grace Lee",
-      pictures: ["image17.jpg", "image18.jpg"],
-      email: "gracelee@example.com",
-      phone_number: "+7788990011",
-      bank_name: "Westside Bank",
-      nin: "NIN778899001"
+      name: "Riverside Elementary School",
+      address: "456 Elm St, Riverside",
+      principal: "Mrs. Jane Doe",
+      students: 800,
+      established: 1990
     },
     {
-      name: "Grace Lee",
-      pictures: ["image17.jpg", "image18.jpg"],
-      email: "gracelee@example.com",
-      phone_number: "+7788990011",
-      bank_name: "Westside Bank",
-      nin: "NIN778899001"
+      name: "Mountainview Middle School",
+      address: "789 Oak St, Mountainview",
+      principal: "Mr. Robert Brown",
+      students: 600,
+      established: 2000
     },
     {
-      name: "Grace Lee",
-      pictures: ["image17.jpg", "image18.jpg"],
-      email: "gracelee@example.com",
-      phone_number: "+7788990011",
-      bank_name: "Westside Bank",
-      nin: "NIN778899001"
+      name: "Lakeside High School",
+      address: "101 Pine St, Lakeside",
+      principal: "Ms. Emily White",
+      students: 1000,
+      established: 1975
+    },
+    {
+      name: "Hilltop Elementary School",
+      address: "202 Maple St, Hilltop",
+      principal: "Mr. Michael Green",
+      students: 700,
+      established: 1980
     }
-  ]
+  ];
 
 
-  let country = [
-    {
-      name: "Grace Lee",
-      pictures: ["image17.jpg", "image18.jpg"],
-      email: "gracelee@example.com",
-      phone_number: "+7788990011",
-      bank_name: "Westside Bank",
-      nin: "NIN778899001"
-    },
-    {
-      name: "Grace Lee",
-      pictures: ["image17.jpg", "image18.jpg"],
-      email: "gracelee@example.com",
-      phone_number: "+7788990011",
-      bank_name: "Westside Bank",
-      nin: "NIN778899001"
-    },
-    {
-      name: "Grace Lee",
-      pictures: ["image17.jpg", "image18.jpg"],
-      email: "gracelee@example.com",
-      phone_number: "+7788990011",
-      bank_name: "Westside Bank",
-      nin: "NIN778899001"
-    },
-    {
-      name: "Grace Lee",
-      pictures: ["image17.jpg", "image18.jpg"],
-      email: "gracelee@example.com",
-      phone_number: "+7788990011",
-      bank_name: "Westside Bank",
-      nin: "NIN778899001"
-    }
-  ]
+  
+let country = [
+  {
+    name: "United States",
+    capital: "Washington, D.C.",
+    population: 331002651,
+    currency: "USD",
+    language: "English"
+  },
+  {
+    name: "Canada",
+    capital: "Ottawa",
+    population: 37742154,
+    currency: "CAD",
+    language: "English, French"
+  },
+  {
+    name: "United Kingdom",
+    capital: "London",
+    population: 67886011,
+    currency: "GBP",
+    language: "English"
+  },
+  {
+    name: "Australia",
+    capital: "Canberra",
+    population: 25499884,
+    currency: "AUD",
+    language: "English"
+  },
+  {
+    name: "Germany",
+    capital: "Berlin",
+    population: 83783942,
+    currency: "EUR",
+    language: "German"
+  }
+];
 
 
   app.get("/api1", (req, res) => {
     res.send(users)
   })
   app.get("/api2", (req, res) => {
-    res.send(bank)
+    res.send(schools)
   })
   app.get("/api3", (req, res) => {
     res.send(country)
